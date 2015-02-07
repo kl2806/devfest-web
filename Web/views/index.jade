@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 EMT App
+  script(type='text/javascript', src='/javascripts/map.js') 
+  div#map
+   img(src='https://maps.googleapis.com/maps/api/staticmap?center=40.807536,-73.962573&zoom=17&size=400x400', alt='Static fallback image showing the New York', width='600', height='600')
+  div#alerts
+  script(type='text/javascript', src='/javascripts/main.js')   	
+  //-script(type='text/javascript', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAdEePW1W5Fj_azNsKh2A3FfkMpijUFva0&sensor=true')
+
