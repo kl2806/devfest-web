@@ -13,17 +13,19 @@ h1{
 
 #map{
 	margin-top: 2rem;
+	display: inline-block;
 	margin-bottom: 3rem;
 	margin-left: 3rem;
-	width: 38rem;
+	width: 40%;
 	height: 38rem;
 	float: left;
 }
 
 div#alerts{
+	
 	margin-top: 2rem;
 	margin-left: 3rem;
-	width: 38rem;
+	width: 40%;
 	float: left;
 	border-style: solid;
     border-color: red;
