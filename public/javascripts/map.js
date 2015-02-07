@@ -12,8 +12,8 @@
 // google.maps.event.addDomListener(window, 'load', initialize);
 
 google.maps.event.addDomListener(window, 'load', init);
-	var latitude = 40.807536;
-	var longitude = -73.962573;
+    var latitude = 40.807536;
+    var longitude = -73.962573;
 
     function init() {
         // Basic options for a simple Google Map
@@ -28,15 +28,15 @@ google.maps.event.addDomListener(window, 'load', init);
             // How you would like to style the map. 
             // This is where you would paste any style found on Snazzy Maps.
             styles: [{"featureType":"administrative",
-            		  "elementType":"all",
-            		  "stylers":[{"visibility":"on"},
-           			  {"lightness":33}]},
-           			  {"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2e5d4"}]},
-           			  {"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#c5dac6"}]},
-           			  {"featureType":"poi.park","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":20}]},
-           			  {"featureType":"road","elementType":"all","stylers":[{"lightness":20}]},
-           			  {"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#c5c6c6"}]},
-           			  {"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#e4d7c6"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#fbfaf7"}]},{"featureType":"water","elementType":"all","stylers":[{"visibility":"on"},{"color":"#acbcc9"}]}]
+                      "elementType":"all",
+                      "stylers":[{"visibility":"on"},
+                      {"lightness":33}]},
+                      {"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2e5d4"}]},
+                      {"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#c5dac6"}]},
+                      {"featureType":"poi.park","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":20}]},
+                      {"featureType":"road","elementType":"all","stylers":[{"lightness":20}]},
+                      {"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#c5c6c6"}]},
+                      {"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#e4d7c6"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#fbfaf7"}]},{"featureType":"water","elementType":"all","stylers":[{"visibility":"on"},{"color":"#acbcc9"}]}]
         };
 
         // Get the HTML DOM element that will contain your map 
@@ -52,11 +52,25 @@ google.maps.event.addDomListener(window, 'load', init);
             map: map,
             title: 'Snazzy!'
         });
-
         var marker2 = new google.maps.Marker({
-            position: new google.maps.LatLng(latitude+0.000002, longitude),
+            position: new google.maps.LatLng(40.807546, -73.962583),
             map: map,
-            title: 'Snazzy!'
+            title: 'Snazzy2!'
         });
+
+        var marker3 = new google.maps.Marker({
+            position: new google.maps.LatLng(41.807536, -73.962573),
+            map: map,
+            title: 'Snazzy2!'
+        });
+         
+
 }
+// $(document).ready(function(){
+//  var map = new GMaps({
+//     div: '#map',
+//     lat: 40.807536,
+//     lng: -73.962573
+//   });
+// });
 
